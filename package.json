@@ -1,0 +1,31 @@
+{
+    "name": "@cspotcode/cli",
+    "version": "0.0.0",
+    "dependencies": {
+        "@types/lodash": "^4.14.158",
+        "@types/node": "^14.0.27",
+        "@yarnpkg/pnpify": "^2.1.0",
+        "dts-bundle-generator": "^5.3.0",
+        "lodash": "^4.17.19",
+        "rollup": "^2.23.0",
+        "rollup-plugin-dts": "^1.4.9",
+        "ts-node": "^8.10.2",
+        "typescript": "^3.9.7",
+        "webpack-config-prefabs": "^0.0.3",
+        "yargs": "^15.4.1"
+    },
+    "scripts": {
+        "build": "yarn build-tsc && yarn build-dts && yarn-webpack",
+        "build-tsc": "tsc -p .",
+        "build-webpack": "webpack",
+        "build-dts": "dts-bundle-generator --config ./dts-bundle-generator.config.js"
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "dependenciesMeta": {
+        "yargs": {
+            "unplugged": true
+        }
+    }
+}
