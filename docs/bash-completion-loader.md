@@ -22,7 +22,7 @@ Something like this:
 
 ```
 #!/usr/bin/env ts-node-script
-//#bash-auto-completion
+//#provides-auto-completion
 import {Option, run} from '@cspotcode/cli';
 // ...
 ```
