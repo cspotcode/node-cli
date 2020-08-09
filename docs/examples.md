@@ -1,6 +1,6 @@
 Hypothetical examples of the API in action
 
-```
+```typescript
 #!/usr/bin/env ts-node-script
 import {Option, run, Handler, Builder, Validator} from '@cspotcode/cli';
 class CommandOptions {
@@ -43,7 +43,7 @@ main({
 ```
 
 Stripped down example of writing a shell script:
-```
+```typescript
 #!/usr/bin/env ts-node-script
 import {Option, run, Handler} from '@cspotcode/cli';
 class Options {
